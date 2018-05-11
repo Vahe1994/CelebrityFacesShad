@@ -31,7 +31,7 @@ def fill_storage():
         current_line = f.readline()
     return h
 
-token = '595211498:AAFJzm4rtcJZrAOao-njv_jzrgntRb5V624'
+token = ''
 bot = telebot.TeleBot(token)
 Wheaherdict = []
 logger = telebot.logger
