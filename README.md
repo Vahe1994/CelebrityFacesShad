@@ -10,9 +10,9 @@ You can try how well this is working in or site URL.
 * Pytorch 0.3
 
 
-
+Tested on Ubuntu 18.04
 First, you must download the pre-trained model from  https://github.com/davidsandberg/facenet ( Pre-trained models)
-Datasets you can find here http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
+
 
 ### Done
  * We have done required module (3 points)
@@ -23,13 +23,45 @@ Datasets you can find here http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html
 ### Face detection and cropping 
  As it mentioned in https://github.com/davidsandberg/facenet ,  best result the best way to detect face we can approach by using MTCNN , we do it with 
 https://pypi.python.org/pypi/face_recognition (built using dlib’s state-of-the-art face recognition) deep learning library.
- In the future, we will try also MTCNN.
+ Also we used VAE main architecture provided in github https://github.com/bhpfelix/Variational-Autoencoder-PyTorch
+
 
 ### Index
  Index was written using Locality-Sensitive Hashing algorithm. We use 10 bits for hashing embeddings. We use 5 hash tables. Index was realized using compiling language C++ and was connected to Telegram Bot using Cython.
+ ![alt text](http://www.speedupcode.com/wp-content/uploads/2018/02/scheme_little_color.png)
+
 
 ### Our NN
  * To get embeddings we use VAE with BCE + KDE losses.
  * To generate face which is similar to yours and Celebrity one we decode mean value between two these two faces embeddings.
 
-![alt text](http://www.speedupcode.com/wp-content/uploads/2018/02/scheme_little_color.png)
+### Dataset
+You can find here http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html (img_align_celeba)
+
+### Usage
+You can try bot here t.me/CelebrityFaces_bot
+
+#### Your own bot:
+##### Compile LSH:
+```
+cd CelebrityFacesShad/src/LSH/
+make lsh_py_module
+```
+##### Getting embedings:
+Use Getting_embeddings.ipynb in Notebooks .
+
+##### Training VAE
+Use Getting_embeddings.ipynb with minor changes to get cropped dataset using  Facecrop.py.
+Use VAE ipython notebook in Notebooks folder to train your model on cropped images.
+
+##### Bot
+First create your own token from BotFather. Past that token in CelebrityFacesBot.py.
+Than move trained model and file with embeddings to Bot/.
+```
+cd CelebrityFacesShad/Bot/
+python CelebrityFacesBot.py
+```
+
+### License
+Our code is released under MIT License (see LICENSE file for details).
+
