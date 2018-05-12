@@ -161,7 +161,6 @@ def get_average(nearest):
         img = Facecrop.get_face(img= None,url="face_image/"+nearest)
     except:
         img = Facecrop.get_face(img= None,url="img_align_celeba/"+nearest) 
-        print(2)
 
     img =  Image.fromarray(img)
     
