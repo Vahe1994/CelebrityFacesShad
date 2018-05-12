@@ -38,7 +38,6 @@ def fill_storage():
         current_line = f.readline()
     return h
 
-<<<<<<< HEAD
 class Flatten(nn.Module):
     def forward(self, input):
         return input.view(input.size(0), -1)
@@ -145,9 +144,6 @@ class VAE(nn.Module):
 
 
 token = '595211498:AAFJzm4rtcJZrAOao-njv_jzrgntRb5V624'
-=======
-token = ''
->>>>>>> 5c15d5ee6bae223df7463f44a2c47f40e5eda98f
 bot = telebot.TeleBot(token)
 Wheaherdict = []
 logger = telebot.logger
@@ -177,15 +173,15 @@ def get_average(nearest):
 @bot.message_handler(commands=['start'])
 def handle_start_help(message):
     bot.send_message(message.chat.id,
-                     "Make a look what cilibrity look alike you! For help type /help")
+                     "Make a look what celebrity look alike you! For help type /help")
 
 
 @bot.message_handler(commands=['help'])
 def handle_start_help(message):
     bot.send_message(message.chat.id,
-                     'To start using this program just upload your photo. ')
+                     'To start using this program just upload your photo. You should not crop your face, bot deal with it by himself. ')
     bot.send_message(message.chat.id,
-                     'For any bug report you can send report to vahe527887@yandex.ru  or aizakharov94@gmail.com .\n Thank you for support.Good Hunt and have fun! ;)')
+                     'For any bug report you can send report to vahe527887@yandex.ru  or aizakharov94@gmail.com or grishin.alexgri@yandex.ru.\n Thank you for your support.Good celeba to you, have fun! ;)')
 
 
 @bot.message_handler(content_types=["text"])
