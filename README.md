@@ -5,8 +5,10 @@ You can try how well this is working in or site URL.
 
 
 ## Dependencies
-* Python 3 with numpy,face_recognition
+* Python 3 with numpy,sklearn,PIL,face_recognition
 * Tensorflow (1.0+), we recomended to use r1.7
+* Pytorch 0.3
+
 
 
 First, you must download the pre-trained model from  https://github.com/davidsandberg/facenet ( Pre-trained models)
