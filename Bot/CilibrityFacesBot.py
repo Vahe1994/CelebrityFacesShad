@@ -10,7 +10,7 @@ import pandas as pd
 import numpy as np
 import sys
 sys.path.insert(0, '../src/')
-sys.path.insert(0, 'LSH/')
+sys.path.insert(0, '../src/LSH/')
 import Facecrop 
 from PIL import Image
 import io
