@@ -67,16 +67,16 @@ python CelebrityFacesBot.py
 | Algorithm     | Search    | Preprocessing |
 | ------------- |:---------:| -------------:|
 | LSH           | O(dl)     | O(dnl+nwh)    |
-| Brute-force   | O(nwh)    | O(nnwh)       |
+| Brute-force   | O(nwh)    |      -        |
 | Trees         | O(logn)(when dim big O(n))| O(nlogn+nwh)   |
 
 Where:
 
 1) n - object count
 
-2) d - space dimention
+2) d - space dimention(about 10)
 
-3) l - number of hash tables
+3) l - number of hash tables(about 5)
 
 4) w,h - image width and height
 
