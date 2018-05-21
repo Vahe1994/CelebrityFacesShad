@@ -59,8 +59,26 @@ First create your own token from BotFather. Past that token in CelebrityFacesBot
 Than move trained model and file with embeddings to Bot/.
 ```
 cd CelebrityFacesShad/Bot/
+
 python CelebrityFacesBot.py
 ```
+#### Algorithm comparison
+
+| Algorithm     | Search    | Preprocessing |
+| ------------- |:---------:| -------------:|
+| LSH           | O(dl)     | O(dnl+nwh)    |
+| Brute-force   | O(nwh)    | O(nnwh)       |
+| Trees         | O(logn)(when dim big O(n))| O(nlogn+nwh)   |
+
+Where:
+
+1) n - object count
+
+2) d - space dimention
+
+3) l - number of hash tables
+
+
 #### Example
 ![alt text](Examples/1.png)
 ![alt text](Examples/2.png)
