@@ -61,7 +61,9 @@ Than move trained model and file with embeddings to Bot/.
 cd CelebrityFacesShad/Bot/
 python CelebrityFacesBot.py
 ```
-
+#### Example
+![alt text](Examples/1.png)
+![alt text](Examples/2.png)
 ### License
 Our code is released under MIT License (see LICENSE file for details).
 
