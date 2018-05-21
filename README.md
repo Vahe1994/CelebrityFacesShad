@@ -78,10 +78,13 @@ Where:
 
 3) l - number of hash tables
 
-4) w,h - width and height
+4) w,h - image width and height
+
+### Time
+LSH preprocesing takes about 10 second.Search works almost immediatly.
 
 
-#### Example
+#### Examples
 ![alt text](Examples/1.png)
 ![alt text](Examples/2.png)
 ### License
