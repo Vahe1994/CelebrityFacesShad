@@ -78,6 +78,8 @@ Where:
 
 3) l - number of hash tables
 
+4) w,h - width and height
+
 
 #### Example
 ![alt text](Examples/1.png)
