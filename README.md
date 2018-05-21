@@ -1,7 +1,7 @@
 # CelebrityFaceSDA
 
 In this git repository, we are providing code that we are using in our version of Celebrity Faces.
-You can try how well this is working in t.me/CelebrityFaces_bot
+You can try how well this is working in t.me/CelebrityFaces_bot.
 
 
 ## Dependencies
